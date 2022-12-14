@@ -11,7 +11,7 @@ body {
     display: flex;
 	position: relative;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     background-color: rgb(162, 111, 233);
     width: 100vw;
@@ -25,7 +25,7 @@ body {
 	text-align: center;
 }
 .button {
-	margin: 20rem 2rem 5rem 2rem;
+	margin: 0rem 2rem 0rem 2rem;
 	pointer-events: auto;
 	cursor: pointer;
 	background: #e7e7e7;

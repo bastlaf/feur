@@ -117,28 +117,27 @@ for (var i = 0; i < maxConfettis; i++) {
 
 
 bouton.addEventListener("click", () => {
+
+    bouton.remove();
+
+
   canvas.width = W;
   canvas.height = H;
-    Draw();
+  Draw();
+  
+  h2.innerHTML = "Feur mec en fait";
+  audio.play();
+
+  setInterval(
+    function changeBackground() {
+    const red = Math.floor(Math.random() * 256);
+    const green = Math.floor(Math.random() * 256);
+    const blue = Math.floor(Math.random() * 256);
     
-        h2.innerHTML = "Feur mec en fait";
-        audio.play();
-        // setTimeout(function() {
-        //     h2.innerHTML = "";
-        // }, 5000);
-        
-        setInterval(
-            
-            
-            function changeBackground() {
-                const red = Math.floor(Math.random() * 256);
-                const green = Math.floor(Math.random() * 256);
-                const blue = Math.floor(Math.random() * 256);
-                
-                // using inline variable
-                document.body.style.background = "rgb(" + red + ", " + green + ", " + blue + ")";
-                
-            },500);
-            
-    });
+    // using inline variable
+    document.body.style.background = "rgb(" + red + ", " + green + ", " + blue + ")";
+    
+  },500);
+      
+});
 

@@ -1,15 +1,39 @@
 {
-  "name": "quoifeur",
+  "name": "feur",
   "version": "1.0.0",
   "description": "",
   "main": "script.js",
+  "dependencies": {
+    "braces": "^3.0.2",
+    "binary-extensions": "^2.2.0",
+    "chokidar": "^3.5.3",
+    "anymatch": "^3.1.3",
+    "immutable": "^4.1.0",
+    "is-binary-path": "^2.1.0",
+    "fill-range": "^7.0.1",
+    "is-extglob": "^2.1.1",
+    "glob-parent": "^5.1.2",
+    "is-number": "^7.0.0",
+    "is-glob": "^4.0.3",
+    "source-map-js": "^1.0.2",
+    "normalize-path": "^3.0.0",
+    "picomatch": "^2.3.1",
+    "sass": "^1.56.2",
+    "readdirp": "^3.6.0",
+    "to-regex-range": "^5.0.1"
+  },
+  "devDependencies": {},
   "scripts": {
     "css": "sass style.scss:css/style.css --poll --watch"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bastlaf/feur.git"
+  },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "sass": "^1.56.2",
-    "tsparticles": "^2.6.0"
-  }
+  "bugs": {
+    "url": "https://github.com/bastlaf/feur/issues"
+  },
+  "homepage": "https://github.com/bastlaf/feur#readme"
 }

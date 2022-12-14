@@ -17,15 +17,15 @@ body {
     width: 100vw;
     height: 100vh;
     transition: all 0.5s ease-in-out;
-position: relative;
+	position: relative;
 }
 .reponse {
     font-family: 'Dancing Script', cursive;
     font-size: 8rem;
+	text-align: center;
 }
 .button {
-    margin-top: 20rem;
-    margin-bottom: 5rem;
+	margin: 20rem 2rem 5rem 2rem;
 	pointer-events: auto;
 	cursor: pointer;
 	background: #e7e7e7;
@@ -36,8 +36,8 @@ position: relative;
 	font-size: inherit;
 	position: relative;
 	display: inline-block;
-}
 
+}
 .button::before,
 .button::after {
 	position: absolute;
@@ -55,7 +55,7 @@ position: relative;
 	font-style: normal;
 	text-transform: uppercase;
 	font-size: 2rem;
-	padding: 0 6rem;
+	padding: 0 3rem;
 	height: 8rem;
 }
 
@@ -118,6 +118,7 @@ a:hover {
 	outline: none;
 }
 
+
 /* https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-visible */
 a:focus,
 button:focus {
@@ -125,7 +126,6 @@ button:focus {
 	 that don't support :focus-visible */
 	outline: none;
 }
-
 
 a:focus-visible,
 button:focus-visible {
@@ -149,3 +149,13 @@ canvas {
 	pointer-events: none;
 }
 
+@media (max-width: 800px) {
+	.reponse {
+	  font-size: 5rem;
+	}
+  }
+@media (max-width: 480px) {
+	.reponse {
+	  font-size: 3rem;
+	}
+  }

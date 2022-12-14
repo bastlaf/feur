@@ -1,0 +1,15 @@
+{
+  "name": "quoifeur",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "css": "sass style.scss:css/style.css --poll --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.56.2",
+    "tsparticles": "^2.6.0"
+  }
+}

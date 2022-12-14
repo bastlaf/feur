@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter&family=Dancing+Script:wght@400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+body {
+    display: flex;
+	position: relative;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgb(162, 111, 233);
+    width: 100vw;
+    height: 100vh;
+    transition: all 0.5s ease-in-out;
+position: relative;
+}
+.reponse {
+    font-family: 'Dancing Script', cursive;
+    font-size: 8rem;
+}
+.button {
+    margin-top: 20rem;
+    margin-bottom: 5rem;
+	pointer-events: auto;
+	cursor: pointer;
+	background: #e7e7e7;
+	border: none;
+	padding: 1.5rem 3rem;
+	// margin: 0;
+	font-family: inherit;
+	font-size: inherit;
+	position: relative;
+	display: inline-block;
+}
+
+.button::before,
+.button::after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.button--helene {
+	border-radius: 7px;
+	border: 1px solid #000;
+	font-family: chapman-extended, sans-serif;
+	font-weight: 600;
+	font-style: normal;
+	text-transform: uppercase;
+	font-size: 2rem;
+	padding: 0 6rem;
+	height: 8rem;
+}
+
+.button--helene::before {
+	content: '';
+	top: 10px;
+	left: 10px;
+	width: calc(100% - 20px);
+	height: calc(100% - 20px);
+	background: rgba(0,0,0,0.5);
+	filter: blur(7px);
+	border-radius: 7px;
+	z-index: -1;
+	transform: translate3d(0,15px,0);
+	transition: transform 0.45s;
+}
+
+.button--helene:hover::before {
+	transform: translate3d(0,0,0);
+}
+
+.button--helene span {
+	display: block;
+}
+
+.button--helene > span {
+	height: 100%;
+    margin-top: 2rem;
+	overflow: hidden;
+	line-height: 4rem;
+}
+
+.button--helene:hover > span > span {
+	animation: slotMachine 0.15s ease-out forwards 3;
+}
+
+@keyframes slotMachine {
+	50% {
+		transform: translate3d(0,100%,0);
+		opacity: 0;
+	}
+	51% {
+		transform: translate3d(0,-100%,0);
+		opacity: 0;
+	}
+	100% {
+		transform: translate3d(0,0,0);
+		opacity: 1;
+	}
+}
+
+a {
+	text-decoration: none;
+	color: var(--color-link);
+	outline: none;
+}
+
+a:hover {
+	color: var(--color-link-hover);
+	outline: none;
+}
+
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-visible */
+a:focus,
+button:focus {
+	/* Provide a fallback style for browsers
+	 that don't support :focus-visible */
+	outline: none;
+}
+
+
+a:focus-visible,
+button:focus-visible {
+	/* Draw a very noticeable focus style for
+	 keyboard-focus on browsers that do support
+	 :focus-visible */
+	outline: 2px solid #443ffc;
+	outline-offset: 3px;
+}
+
+a:focus-visible {
+	background: none;
+}
+
+
+canvas {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 50;
+	pointer-events: none;
+}
+
